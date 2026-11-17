@@ -1,0 +1,23 @@
+[package]
+name = "rust-web-reader"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-cors = "0.7.2"
+actix-web = "4.15.0"
+argon2 = "0.6.0"
+dotenvy = "0.15.7"
+headless_chrome = "1.0.22"
+reqwest = { version = "0.13.5", features = ["json"] }
+scraper = "0.27.0"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+sqlx = { version = "0.9.0", features = ["runtime-tokio", "tls-rustls", "postgres", "uuid", "chrono", "json"] }
+url = "2.5.8"
+utoipa = { version = "5", features = ["actix_extras", "chrono", "uuid"] }
+utoipa-swagger-ui = { version = "9", features = ["actix-web"] }
+uuid = { version = "1.26.1", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+tokio = { version = "1.53.1", features = ["time"] }
+

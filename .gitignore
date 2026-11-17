@@ -1,0 +1,10 @@
+/target
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Mac files
+.DS_Store
+
